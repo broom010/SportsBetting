@@ -2,7 +2,8 @@ SportsBetting
 ==============================
 
 Sports betting API
-Authors: Dan and Jimmy!!!
+
+Authors: Dan Diroff and Jimmy Broomfield
 
 Project Organization
 ------------
