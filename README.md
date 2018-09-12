@@ -2,7 +2,7 @@ SportsBetting
 ==============================
 
 Sports betting API
-Authors: Dan and Jimmy!
+Authors: Dan and Jimmy!!!
 
 Authors: Dan and Jimmy
 
