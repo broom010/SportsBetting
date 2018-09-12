@@ -2,6 +2,7 @@ SportsBetting
 ==============================
 
 Sports betting API
+
 Authors: Dan and Jimmy
 
 Project Organization
