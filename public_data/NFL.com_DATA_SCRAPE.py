@@ -61,7 +61,9 @@ for k in range(0,3):
     else: 
         info = []
 
-        for i in range(1,get_page(BeautifulSoup(requests.get(URLs[k][0] + str(1) + URLs[k][1]).content))+1):
+        r = requests.get(URLs[k][0] + str(1) + URLs[k][1])
+
+        for i in range(1,int(get_page(BeautifulSoup(r.content)))+1):
 
             r = requests.get(URLs[k][0] + str(i) + URLs[k][1])
 
