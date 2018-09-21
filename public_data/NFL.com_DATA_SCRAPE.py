@@ -5,6 +5,12 @@ import os
 
 print(os.getcwd())
 
+def get_page(soup):
+    nav = soup.find_all('span', class_='linkNavigation floatRight')
+    try:
+        return re.search('>(.*)<', str(nav[0].find_all('a')[-2])).group(1)
+    except:
+        return 1
 
 stat_cat = ['RUSHING', 'RECIEVING', 'PASSING']
 
