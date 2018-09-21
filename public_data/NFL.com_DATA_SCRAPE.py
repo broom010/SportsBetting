@@ -32,22 +32,20 @@ for k in range(0,3):
     if k == 2:
         info = []
 
-        for i in range(1,3):
+        r = requests.get(pass_url)
 
-            r = requests.get(pass_url)
+        soup = BeautifulSoup(r.content)
 
-            soup = BeautifulSoup(r.content)
+        data = soup.findAll('table', {'class' : 'data-table1'})[0]
 
-            data = soup.findAll('table', {'class' : 'data-table1'})[0]
+        data_rows = data.findAll('tr') 
 
-            data_rows = data.findAll('tr') 
-
-            for row in data_rows[1:]:
-                cols = row.findAll('td')
-                c = []
-                for col in cols:
-                    c.append(" ".join(col.text.split()))
-                info.append(c)
+        for row in data_rows[1:]:
+            cols = row.findAll('td')
+            c = []
+            for col in cols:
+                c.append(" ".join(col.text.split()))
+            info.append(c)
 
         df = pd.DataFrame(info, columns=pass_cols)
 
