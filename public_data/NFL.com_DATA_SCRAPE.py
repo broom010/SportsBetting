@@ -11,7 +11,7 @@ stat_cat = ['RUSHING', 'RECIEVING', 'PASSING']
 
 rush_url = ["http://www.nfl.com/stats/categorystats?tabSeq=0&season=2018&seasonType=REG&Submit=Go&experience=&archive=false&d-447263-p=", "&statisticCategory=RUSHING&conference=null&qualified=false"]
 rec_url = ["http://www.nfl.com/stats/categorystats?tabSeq=0&season=2018&seasonType=REG&experience=&Submit=Go&archive=false&conference=null&statisticCategory=RECEIVING&d-447263-p=","&qualified=false"]
-pass_url = ["http://www.nfl.com/stats/categorystats?archive=false&conference=null&statisticCategory=PASSING&season=2018&seasonType=REG&experience=&tabSeq=0&qualified=false&Submit=Go"]
+pass_url = "http://www.nfl.com/stats/categorystats?archive=false&conference=null&statisticCategory=PASSING&season=2018&seasonType=REG&experience=&tabSeq=0&qualified=false&Submit=Go"
 URLs = [rush_url, rec_url, pass_url]
 
 
@@ -21,7 +21,7 @@ rec_cols = ['Rank', 'Player', 'Team', 'Pos', 'Rec', 'Yds', 'Avg', 'Yds/G', 'Long
 pass_cols = ['Rank', 'Player', 'Team', 'Pos','Comp', 'Att', 'Pct', 'Att/G', 'Yds', 'Avg', 'Yds/G', 'TDs', 'INTs', '1st', '1st%', 'Long', '20+', '40+', 'Sacks', 'Rate']
 COLs = [rush_cols, rec_cols, pass_cols]
 
-for k in range(0,2):
+for k in range(0,3):
     if k == 2:
         info = []
 
